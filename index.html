@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>creation rider </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Créateur de Rider Artiste</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Créateur de Rider Technique</h1>
+
+  <form id="riderForm">
+    <label for="artistName">Nom de l'artiste</label>
+    <input type="text" id="artistName" placeholder="Ex : Mortadon" required />
+
+    <label for="contactInfo">Contact</label>
+    <input type="text" id="contactInfo" placeholder="Email, téléphone..." required />
+
+    <label for="section1">besoin son  (Titre et contenu, séparés par deux points)</label>
+    <textarea id="section1" placeholder="Ex : Sonorisation: 2 micros"></textarea>
+
+    <label for="section2">Besoin Lumière </label>
+    <textarea id="section2" placeholder="Ex : Éclairage: 10 PAR LED RGB, console DMX"></textarea>
+
+    <label for="section3">Instrument </label>
+    <textarea id="section3" placeholder="Ex : Backline: Batterie complète, amplis guitare"></textarea>
+
+    <button type="submit">Générer et Télécharger le PDF</button>
+  </form>
+
+  <h2>Aperçu du Rider</h2>
+  <div id="preview">Remplis le formulaire pour voir l’aperçu...</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
